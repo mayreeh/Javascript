@@ -1,0 +1,45 @@
+//in javascript functions are values
+//Normal function
+function double(x)
+{
+	return 2 * x;
+}
+
+//special case in javascript - where functions are values
+var double = function (x)
+{
+	return 2 * x;
+}
+console.log(double(2)); //will give 4.
+
+var xx = double;
+console.log(xx(2)); //will give 4.
+
+var country_towns = [
+{ town:"Nairobi" , country : "Kenya"},
+{ town:"Dar" , country : "Tanzania"},
+{ town:"Kampala" , country : "Uganda"},
+{ town:"Nakuru" , country : "Kenya"},
+{ town:"Mwanza" , country : "Tanzania"},
+{ town:"Nyeri" , country : "Kenya"},
+
+];
+
+var kenya = function(x)
+{
+return t.country === "Kenya";
+}
+//list the towns from kenya.- using Filter Function
+var kenya_towns = country_towns.filter(function(t){
+	return t.country === "Kenya";
+});
+//filter accepts one paramater that is one functiom.
+//
+//filter will loop through each item in the array , then pass
+console.log(kenya_towns);
+
+//all countries not kenya
+var not_kenya = country_towns.reject(function(t){
+	return t.country === "Kenya";
+});
+console.log(not_kenya);
