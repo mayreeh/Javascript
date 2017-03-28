@@ -1,10 +1,10 @@
 //lets assume we have a basket of some shopping in an array
 var shopping = [
-  {name : "oranges" : type : "fruit"},
-  {name : "kales" : type : "vegetable"},
-  {name : "spinach" : type : "vegetable"},
-  {name : "kiwi" : type : "fruit"},
-  {name : "mango" : type : "fruit"}
+  {name : "oranges" , type : "fruit"},
+  {name : "kales" , type : "vegetable"},
+  {name : "spinach" , type : "vegetable"},
+  {name : "kiwi" , type : "fruit"},
+  {name : "mango" , type : "fruit"}
 
 ]
 
@@ -13,5 +13,5 @@ var shopping = [
 *functions are variables
 * Filter function loops each item in the array into the callback function
 */
-var fruits = shopping.filter(function(n) { return n->type == "fruit"});
+var fruits = shopping.filter(function(n) { return n.type == "fruit"});
 console.log(fruits);
